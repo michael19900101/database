@@ -1,7 +1,7 @@
 package com.example.aotuman.database.greendao.Dao;
 
 
-import com.example.aotuman.database.greendao.Base.BaseApplication;
+import com.example.aotuman.database.Base.BaseApplication;
 import com.example.aotuman.database.greendao.Bean.Shop;
 import com.example.aotuman.database.greendao.Bean.ShopDao;
 

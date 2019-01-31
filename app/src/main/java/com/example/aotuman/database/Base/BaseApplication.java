@@ -1,4 +1,4 @@
-package com.example.aotuman.database.greendao.Base;
+package com.example.aotuman.database.Base;
 
 import android.database.sqlite.SQLiteDatabase;
 
@@ -24,7 +24,7 @@ public class BaseApplication extends BaseApp {
      * 配置数据库
      */
     private void setupDatabase() {
-        DaoMaster.DevOpenHelper helper = new DaoMaster.DevOpenHelper(this, "shop.db", null);
+        DaoMaster.DevOpenHelper helper = new DaoMaster.DevOpenHelper(this, "shop_greendao.db", null);
         SQLiteDatabase db = helper.getWritableDatabase();
         DaoMaster daoMaster = new DaoMaster(db);
         daoSession = daoMaster.newSession();

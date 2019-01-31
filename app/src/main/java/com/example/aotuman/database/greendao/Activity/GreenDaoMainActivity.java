@@ -14,7 +14,7 @@ import com.example.aotuman.database.greendao.Dao.LoveDao;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class GreenDaoMainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button bt_add, bt_delete, bt_update, bt_query;
     private ListView lv_content;
