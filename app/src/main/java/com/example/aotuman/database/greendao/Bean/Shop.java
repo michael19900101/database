@@ -18,7 +18,6 @@ public class Shop{
     //不能用int
     @Id(autoincrement = true)
     private Long id;
-    @Unique
     private String name;
     @Property(nameInDb = "price")
     private String price;

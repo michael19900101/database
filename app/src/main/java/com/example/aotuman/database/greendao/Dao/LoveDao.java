@@ -21,6 +21,10 @@ public class LoveDao {
         BaseApplication.getDaoInstant().getShopDao().insert(shop);
     }
 
+    public static void insertLove(List<Shop> shops) {
+        BaseApplication.getDaoInstant().getShopDao().insertInTx(shops);
+    }
+
     /**
      * 删除数据
      *
@@ -30,6 +34,10 @@ public class LoveDao {
         BaseApplication.getDaoInstant().getShopDao().deleteByKey(id);
     }
 
+    public static void deleteLove(List<Shop> shops) {
+        BaseApplication.getDaoInstant().getShopDao().deleteInTx(shops);
+    }
+
     /**
      * 更新数据
      *
@@ -37,6 +45,10 @@ public class LoveDao {
      */
     public static void updateLove(Shop shop) {
         BaseApplication.getDaoInstant().getShopDao().update(shop);
+    }
+
+    public static void updateLove(List<Shop> shops) {
+        BaseApplication.getDaoInstant().getShopDao().updateInTx(shops);
     }
 
     /**
